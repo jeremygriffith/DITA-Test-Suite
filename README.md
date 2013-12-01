@@ -1,7 +1,7 @@
 DITA Test Suite
 ===============
 
-The DITA Test Suite (DTS) is a set of test cases for DITA 1.2 processors such as DITA2Go (http://dita2go.com) and the DITA-OT.  It consists of maps, topics, and ditavals that are 100% compliant with the DITA 1.2 spec.  The DITA source is in DITATestSuite.zip.  The results from DITA2Go are in OmniHelp in DITATestSuiteOH01.zip; download and unzip in its own directory, and double-click on \_DITATestSuite.htm.  The Word version is in DITATestSuite.docx.
+The DITA Test Suite (DTS) is a set of test cases for DITA 1.2 processors such as DITA2Go (http://dita2go.com) and the DITA-OT (https://github.com/drmacro/dita-ot).  It consists of maps, topics, and ditavals that are 100% compliant with the DITA 1.2 spec.  The DITA source is in DITATestSuite.zip.  The results from DITA2Go are in OmniHelp in DITATestSuiteOH01.zip; download and unzip in its own directory, and double-click on \_DITATestSuite.htm.  The Word version is in DITATestSuite.docx.
 
 Note that the DTS does not exercise <b>all</b> features of DITA 1.2.  For example, it has only topic types topic, concept, task, reference, and glossdef; there are many more.  We welcome additions from the community.
 
