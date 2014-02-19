@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="language">
+<title>Languages</title>
+<shortdesc>This topic uses the importance attribute to show
+the effect of changing language on various elements.</shortdesc>
+<conbody>
+<section>
+<title>Importance in Languages</title>
+<p>The importance attribute can have many values: obsolete, 
+deprecated, optional, default, low, normal, high, recommended, 
+required, and urgent  The following simplelists use each of 
+those, in the above order.</p>
+<p>This is the en-US version:</p>
+<sl>
+<sli importance="obsolete">This is obsolete.</sli>
+<sli importance="deprecated">This is deprecated.</sli>
+<sli importance="optional">This is optional.</sli>
+<sli importance="default">This is default.</sli>
+<sli importance="low">This is low.</sli>
+<sli importance="normal">This is normal.</sli>
+<sli importance="high">This is high.</sli>
+<sli importance="recommended">This is recommended.</sli>
+<sli importance="required">This is required.</sli>
+<sli importance="urgent">This is urgent.</sli>
+</sl>
+<p>This is the es (Spanish) version:</p>
+<sl xml:lang="es">
+<sli importance="obsolete">Esta es obsoleto.</sli>
+<sli importance="deprecated">Esto está en desuso.</sli>
+<sli importance="optional">Esto es opcional.</sli>
+<sli importance="default">Esta es la opción predeterminada.</sli>
+<sli importance="low">Esta es bajo.</sli>
+<sli importance="normal">Esto es normal.</sli>
+<sli importance="high">Este es alta.</sli>
+<sli importance="recommended">Esto se recomienda.</sli>
+<sli importance="required">Esto es necesario.</sli>
+<sli importance="urgent">Esto es urgente.</sli>
+</sl>
+<p>This is the fr (French) version:</p>
+<sl xml:lang="fr">
+<sli importance="obsolete">C'est obsolète.</sli>
+<sli importance="deprecated">Il est déconseillé.</sli>
+<sli importance="optional">Cette option est facultative.</sli>
+<sli importance="default">C'est par défaut.</sli>
+<sli importance="low">Ce chiffre est faible.</sli>
+<sli importance="normal">Ceci est normal.</sli>
+<sli importance="high">Cette est élevé.</sli>
+<sli importance="recommended">Cette option est recommandée.</sli>
+<sli importance="required">Ceci est nécessaire.</sli>
+<sli importance="urgent">C'est urgent.</sli>
+</sl>
+</section>
+</conbody>
+</concept>
+

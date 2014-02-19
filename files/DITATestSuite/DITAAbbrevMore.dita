@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 1.1 Topic//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd">
+<topic xml:lang="en-us" id="abbrevmore">
+<title>More Abbreviations <abbreviated-form keyref="USBFlash" /></title>
+<shortdesc>This contains more examples of abbreviations using keyrefs.</shortdesc>
+<body>
+<p>The instance in the title above should use the acronym.  The first 
+instance here should be back to the long form, because Head2 reset it,
+"<abbreviated-form keyref="USBFlash" />", and the second short again, 
+"<abbreviated-form keyref="USBFlash" />".</p></body>
+<related-links>
+<link keyref="keyrefs" format="dita"></link>
+</related-links>
+</topic>

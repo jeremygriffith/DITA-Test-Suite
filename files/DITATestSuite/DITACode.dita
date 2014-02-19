@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="code">
+<title>Code</title>
+<shortdesc>This topic contains codeblock, codeph, and coderef examples.</shortdesc>
+<conbody>
+<section>
+<title>Character Encoding</title>
+<p>DITA uses Unicode for its text, typically in UTF-8 encoding.
+This works well for may outputs, but there are two that require
+conversion.</p>
+<ol>
+<li><p><b>HTML Help</b> uses Windows code pages instead.  The code
+points for U+0020-U+00FF are the same as CP1252, except for the
+U+0080-U+009F range, where many Unicode chars from above U+00FF
+are mapped into CP1252. Here are the Unicode:</p>
+<ul>
+<li>Section sign, U+00A7: &#xA7;</li>
+<li>Em dash, U+2013: &#x2013;</li>
+<li>Ohm sign, U+2126 or U+03A9: &#x2126; &#x03A9; which is not in CP1252
+at all and needs to be shown using the Symbol font.</li>
+</ul></li>
+<li><p><b>Word RTF</b> actually supports the Unicode code points,
+but they are entered as numbers rather than as characters.  For
+example, U+00A7 is \u167*, where the last char is used as a substitute
+if the current font does not contain that glyph.</p></li>
+</ol>
+</section>
+<section>
+<title>Code Block</title>
+<p>A &lt;codeblock&gt; contains content to be rendered   as is.  
+The first one uses a CDATA section:</p>
+<codeblock><![CDATA[<section>
+<title>Code Block</title>
+<p>A &lt;codeblock&gt; contains content to be rendered   as is.</p>
+</section>]]>
+</codeblock>
+<p>The second uses entities:</p>
+<codeblock>&lt;section&gt;
+&lt;title&gt;Code Block&lt;/title&gt;
+&lt;p&gt;A &amp;lt;codeblock&amp;gt; contains content to be rendered   as is.&lt;/p&gt;
+&lt;/section&gt;
+</codeblock>
+<p>The two extra spaces after "rendered" are intentional.</p>
+</section>
+<section>
+<title>Code Phrase</title>
+<p>A &lt;codeph&gt; is an inline element in a paragraph, like this C snippet:
+<codeph>F_StrCpy(command, ComSpec);</codeph></p>
+</section>
+<section>
+<title>Code Reference</title>
+<p>A &lt;coderef&gt; is a reference to a file containing code,
+to be included at the current position.  It is used inside a
+&lt;codeblock&gt;:</p>
+<codeblock>This is fdkfunc.c:
+<coderef href="fdkfunc.c" /></codeblock>
+<p>Here is a second instance of it, with the header and footer lines removed
+by the PI &lt;?dtall ExtCodeStartLine="4" ExtCodeEndLine="15" ?&gt;:</p>
+<?dtall ExtCodeStartLine="4" ExtCodeEndLine="15" ?>
+<codeblock><coderef href="fdkfunc.c" /></codeblock>
+<p>And here is a third instance, using the fragment identifier from 
+<xref href="http://tools.ietf.org/html/rfc5147" scope="external">RFC 5147</xref>,
+in this case to select the same subset of lines, while verifying the file length
+(in bytes, not characters, and not the fragment length) and specifying the file's encoding:
+<codeph>href="fdkfunc.c#line=3,15;length=438,UTF-8"</codeph>. Note that the start 
+line is the line <b>before</b> the first one you want for the RFC 5147 syntax.</p>
+<codeblock><coderef href="fdkfunc.c#line=3,15;length=438,UTF-8" /></codeblock>
+</section>
+</conbody>
+</concept>
+

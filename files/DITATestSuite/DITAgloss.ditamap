@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 1.1 Map//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/map.dtd">
+<map xml:lang="en-us" id="map">
+<topichead navtitle="Glossary Terms" toc="Yes" >
+<topicref keyref="USBFlash" type="glossentry" format="dita"
+navtitle="USB Flash Drive" />
+<topicref href="gl_DITAOT.dita" type="glossentry" format="dita"
+navtitle="DITA-OT" />
+<topicref href="gl_DITA2Go.dita" type="glossentry" format="dita"
+navtitle="DITA2Go" />
+</topichead>
+</map>

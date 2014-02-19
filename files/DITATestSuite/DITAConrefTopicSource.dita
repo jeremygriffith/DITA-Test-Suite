@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA 1.1 Concept//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept xml:lang="en-us" id="conref_topic_source">
+<title>Conref Topic Source</title>
+<shortdesc>This content should appear in place of the Conref Topic
+description, which was: 
+<ph conref="DITAConrefTopic.dita#conref_topic/conref_shortdesc" /></shortdesc>
+<conbody>
+<section id="original_section"
+ conref="DITAConrefTopic.dita#conref_topic/conref_section">
+<title>Replaced Title, Should Not Appear</title>
+<p>This text is in a section replaced by a conref, and should not be visible.</p>
+</section>
+</conbody>
+</concept>
+

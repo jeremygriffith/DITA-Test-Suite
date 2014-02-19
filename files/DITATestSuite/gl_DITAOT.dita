@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA 1.1 Glossary//EN"
+  "http://docs.oasis-open.org/dita/v1.1/OS/dtd/glossary.dtd">
+<glossentry xml:lang="en-us" id="DITAOT">
+  <glossterm>DITA-OT</glossterm>
+  <glossdef>An XSLT and Java-based FOSS tool for processing DITA
+  into HTML, PDF, and other formats.</glossdef>
+</glossentry>
